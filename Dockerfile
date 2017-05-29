@@ -12,3 +12,4 @@ ENV KUBE_LATEST_VERSION="v1.5.4"
  && rm /var/cache/apk/* 
 
 CMD /bin/bash -c "while true;do echo 'It is the test multi containers - testv2.6'; sleep 1800;done"
+ENTRYPOINT /failscript.sh ; /bin/bash
