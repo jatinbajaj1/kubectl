@@ -1,3 +1,6 @@
 FROM alpine:3.3
 
-ENTRYPOINT ["cmd.sh"]
+WORKDIR /root
+ADD cmd.sh /root/cmd.sh
+
+CMD ["./cmd.sh"]
