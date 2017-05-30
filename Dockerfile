@@ -1,7 +1,7 @@
 FROM alpine:3.3
 
-WORKDIR /root
-ADD cmd.sh /root/cmd.sh
+WORKDIR /app
+ADD cmd.sh /app/cmd.sh
 
-RUN chmod +x /cmd.sh
+RUN chmod +x cmd.sh
 CMD ["./cmd.sh"]
