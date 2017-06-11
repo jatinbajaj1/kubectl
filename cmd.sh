@@ -1,6 +1,6 @@
 #!/bin/sh
 echo "i Am returning Error " 1>&2
-exit 1
+exit 22
 
 while false
 do
