@@ -1,5 +1,8 @@
 #!/bin/sh
-echo "Error From Container" 1>&2
+
+echo "This is simple messge only , Not error"
+
+echo "Error From Container" >&2
 exit 1
 
 while false
