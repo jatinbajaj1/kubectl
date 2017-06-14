@@ -2,7 +2,7 @@
 
 echo "This is simple messge only , Not error"
 
-echo "Error From Container" >&2
+echo "Error From Container" > /dev/termination-log
 exit 1
 
 while false
